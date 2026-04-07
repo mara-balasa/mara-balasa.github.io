@@ -500,9 +500,11 @@ main {
 }
 
 @media (max-width: 580px) {
-  .tl-track::before { left: 79px; }
+  /* year col = 80px, dot col = 24px → dot center at 80+12=92px, line offset by 1px */
+  .tl-track::before { left: 91px; }
   .tl-entry { grid-template-columns: 80px 24px 1fr; }
-  .tl-section-label { padding-left: 118px; }
+  /* 80px year + 24px dot col + 20px body padding = 124px */
+  .tl-section-label { padding-left: 124px; }
   .tl-year { font-size: 0.72rem; }
 }
 
