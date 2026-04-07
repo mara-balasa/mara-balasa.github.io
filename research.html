@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Mara Bălașa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Mara<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <div class="page-heading" data-animate>
+    <p class="label">Publications</p>
+    <h1>Research &amp;<br/><em>Writing.</em></h1>
+    <p>
+      My research focuses on industrial policy in the green transition, the costs and
+      challenges of decarbonising heavy industries (steel, ammonia, methanol), and the
+      design of policy instruments to address these obstacles.
+    </p>
+  </div>
+
+  <!-- Stat strip -->
+  <div class="stat-strip" data-animate data-delay="1">
+    <div class="stat">
+      <span class="stat-num">10<em>+</em></span>
+      <span class="stat-label">Publications</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-label">Working papers</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-num">1</span>
+      <span class="stat-label">Journal article</span>
+    </div>
+  </div>
+
+  <!-- Filter -->
+  <div class="papers__filter" id="papersFilter" data-animate data-delay="2">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="journal">Journal Articles</button>
+    <button class="filter-btn" data-filter="working">Working Papers</button>
+    <button class="filter-btn" data-filter="chapter">Policy Reports</button>
+    <button class="filter-btn" data-filter="notebook">Essays</button>
+  </div>
+
+  <!-- Cards -->
+  <div class="papers__grid" id="papersGrid">
+
+    <!-- Journal Articles -->
+    <article class="paper-card" data-type="journal" data-animate data-delay="1">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Journal of Industrial Ecology</span>
+        <span class="paper-card__year">2025</span>
+        <span class="paper-card__type paper-card__type--journal">Journal</span>
+      </div>
+      <h3 class="paper-card__title">
+        Pricing the green transition: An investment appraisal of Romanian low-carbon steel
+      </h3>
+      <p class="paper-card__abstract">
+        An investment appraisal of the transition to low-carbon steel production in Romania,
+        examining the economic costs and financial viability of decarbonisation pathways
+        for the Romanian primary steelmaker.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., &amp; Sandberg, R.</div>
+      <a href="https://doi.org/10.1111/jiec.70054" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Paper
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <!-- Working Papers -->
+    <article class="paper-card" data-type="working" data-animate data-delay="1">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Working Paper</span>
+        <span class="paper-card__year">In progress</span>
+        <span class="paper-card__type paper-card__type--working">Working Paper</span>
+      </div>
+      <h3 class="paper-card__title">
+        Climate Change Mitigation or Strategic Competitiveness? Industrial Policy as a Geopolitical Tool
+      </h3>
+      <p class="paper-card__abstract">
+        Examines the role of geoeconomics when analysing industrial policy motivated by
+        climate objectives and by strategic competitiveness, exploring how geopolitical
+        incentives shape the design and green industrial policy.
+      </p>
+      <div class="paper-card__authors">Bălașa, M.</div>
+      <a href="#" class="paper-card__link">
+        Draft available upon request
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="working" data-animate data-delay="2">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Working Paper</span>
+        <span class="paper-card__year">In progress</span>
+        <span class="paper-card__type paper-card__type--working">Working Paper</span>
+      </div>
+      <h3 class="paper-card__title">
+        Have Zonal Electricity Prices in Sweden Caused Industrial (Re-)locations?
+      </h3>
+      <p class="paper-card__abstract">
+        This paper analyses the consequences of the Swedish electricity market reform which
+        divided the country into four bidding zones. Such changes are expected to lead to
+        industrial relocations towards the cheaper electricity zones. We examine the macro
+        and micro levels of this reconfiguration using regional and firm-level data.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., &amp; Pollitt, M.</div>
+      <a href="#" class="paper-card__link">
+        Draft available upon request
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="working" data-animate data-delay="3">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Working Paper</span>
+        <span class="paper-card__year">In progress</span>
+        <span class="paper-card__type paper-card__type--working">Working Paper</span>
+      </div>
+      <h3 class="paper-card__title">
+        Carbon Contracts for Difference to Decarbonize Steel Production
+      </h3>
+      <p class="paper-card__abstract">
+        A state support scheme aiming to provide long-run investment certainty for the
+        Romanian primary steelmaker, analysing how Carbon Contracts for Difference can
+        bridge the cost gap between green and conventional steel production.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., &amp; Miu, L.</div>
+      <a href="#" class="paper-card__link">
+        Draft available upon request
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <!-- Policy Reports -->
+    <article class="paper-card" data-type="chapter" data-animate data-delay="1">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Energy Policy Group</span>
+        <span class="paper-card__year">2026</span>
+        <span class="paper-card__type paper-card__type--chapter">Op-ed</span>
+      </div>
+      <h3 class="paper-card__title">
+        Momentul de cotitură al siderurgiei românești
+      </h3>
+      <p class="paper-card__abstract">
+        Un op-ed care examinează momentul decisiv cu care se confruntă siderurgia românească
+        în contextul tranziției verzi, explorând alegerile de politică industrială și condițiile
+        structurale care vor determina viitorul sectorului.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., &amp; Strîmbovschi, S.</div>
+      <a href="https://www.epg-thinktank.org/wp-content/uploads/2026/03/Op-ed-Momentul-de-cotitura-al-siderurgiei-romanesti_formatat-1.pdf" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Op-ed
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="chapter" data-animate data-delay="2">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Energy Policy Group</span>
+        <span class="paper-card__year">2025</span>
+        <span class="paper-card__type paper-card__type--chapter">Commentary</span>
+      </div>
+      <h3 class="paper-card__title">
+        Transforming Romania's Fertiliser Industry: Managing Trade-offs between Different Ammonia Pathways
+      </h3>
+      <p class="paper-card__abstract">
+        An analysis of decarbonisation pathways for Romania's fertiliser industry, examining
+        the trade-offs between different ammonia production routes and their implications
+        for industrial competitiveness and climate targets.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., &amp; Miu, L.</div>
+      <a href="https://www.epg-thinktank.org/transforming-romanias-fertiliser-industry-managing-trade-offs-between-different-ammonia-pathways/" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Commentary
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="chapter" data-animate data-delay="3">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Energy Policy Group</span>
+        <span class="paper-card__year">2025</span>
+        <span class="paper-card__type paper-card__type--chapter">Policy Paper</span>
+      </div>
+      <h3 class="paper-card__title">
+        Can Romania Revive Its Domestic Methanol Production? Key Challenges and Opportunities
+      </h3>
+      <p class="paper-card__abstract">
+        A policy paper examining the key challenges and opportunities for reviving domestic
+        methanol production in Romania, analysing the conditions under which Romania could
+        re-establish a competitive methanol industry aligned with the green transition.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., Strîmbovschi, S., &amp; Cătuți, M.</div>
+      <a href="https://www.epg-thinktank.org/wp-content/uploads/2025/10/EPG-Policy-Paper_Can-Romania-Revive-Its-Domestic-Methanol-Production_Key-Challenges-and-Opportunities.pdf" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Paper
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="chapter" data-animate data-delay="1">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Energy Policy Group</span>
+        <span class="paper-card__year">2025</span>
+        <span class="paper-card__type paper-card__type--chapter">Op-ed</span>
+      </div>
+      <h3 class="paper-card__title">
+        Hydrogen: A story of strategic autonomy
+      </h3>
+      <p class="paper-card__abstract">
+        An examination of hydrogen's role in Europe's industrial strategy, focusing on
+        the intersection of energy security, strategic autonomy, and the green transition.
+      </p>
+      <div class="paper-card__authors">Bălașa, M.</div>
+      <a href="https://www.epg-thinktank.org/wp-content/uploads/2025/07/EPG-OP-ED_Hydrogen-A-Story-of-Strategic-Autonomy.pdf" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Op-ed
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="chapter" data-animate data-delay="2">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Energy Policy Group</span>
+        <span class="paper-card__year">2025</span>
+        <span class="paper-card__type paper-card__type--chapter">Policy Paper</span>
+      </div>
+      <h3 class="paper-card__title">
+        Ensuring the Long-term Competitiveness of Romania's Steel Industry
+      </h3>
+      <p class="paper-card__abstract">
+        A policy-focused assessment of the structural challenges facing Romania's steel
+        sector, identifying the conditions necessary to maintain industrial competitiveness
+        through the green transition.
+      </p>
+      <div class="paper-card__authors">Bălașa, M., &amp; Strîmbovschi, S.</div>
+      <a href="https://www.epg-thinktank.org/wp-content/uploads/2025/05/POLICY-PAPER-Romanias-steel-industy.pdf" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Paper
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="chapter" data-animate data-delay="3">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Energy Policy Group</span>
+        <span class="paper-card__year">2024</span>
+        <span class="paper-card__type paper-card__type--chapter">Slide Deck</span>
+      </div>
+      <h3 class="paper-card__title">
+        The Cost of Romania's Industrial Transition
+      </h3>
+      <p class="paper-card__abstract">
+        A slide deck presenting an overview of the investment costs and policy implications
+        associated with Romania's industrial transition, examining decarbonisation pathways
+        across key heavy industry sectors.
+      </p>
+      <div class="paper-card__authors">Miu, L., Bălașa, M., Cătuți, M., Strîmbovschi, S., &amp; Lazăr, C.</div>
+      <a href="https://www.epg-thinktank.org/wp-content/uploads/2024/09/EPG-SLIDE-DECK-The-cost-of-Romanias-Industrial-Transition-30.09.pdf" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        View Slide Deck
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <!-- Essays -->
+    <article class="paper-card" data-type="notebook" data-animate data-delay="1">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Engelsberg Ideas</span>
+        <span class="paper-card__year">2026</span>
+        <span class="paper-card__type paper-card__type--notebook">Essay</span>
+      </div>
+      <h3 class="paper-card__title">
+        Hydrogen warfare
+      </h3>
+      <p class="paper-card__abstract">
+        How hydrogen fuel technologies could revolutionise military operations, with potential
+        implications for NATO strategy and the ongoing conflict in Ukraine.
+      </p>
+      <div class="paper-card__authors">Bălașa, M.</div>
+      <a href="https://engelsbergideas.com/notebook/hydrogen-warfare/" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Essay
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="notebook" data-animate data-delay="2">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Engelsberg Ideas</span>
+        <span class="paper-card__year">2025</span>
+        <span class="paper-card__type paper-card__type--notebook">Essay</span>
+      </div>
+      <h3 class="paper-card__title">
+        Romania's long return to the West
+      </h3>
+      <p class="paper-card__abstract">
+        How Romania's historical Latin heritage and westward cultural orientation continue
+        to shape its modern NATO membership and geopolitical positioning.
+      </p>
+      <div class="paper-card__authors">Bălașa, M.</div>
+      <a href="https://engelsbergideas.com/notebook/romanias-long-return-to-the-west/" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Essay
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+    <article class="paper-card" data-type="notebook" data-animate data-delay="3">
+      <div class="paper-card__meta">
+        <span class="paper-card__venue">Engelsberg Ideas</span>
+        <span class="paper-card__year">2023</span>
+        <span class="paper-card__type paper-card__type--notebook">Essay</span>
+      </div>
+      <h3 class="paper-card__title">
+        Locked arms: looming threats to the Romania–NATO partnership
+      </h3>
+      <p class="paper-card__abstract">
+        An examination of threats to Romania's NATO partnership, including domestic political
+        instability, the rise of far-right movements, economic challenges, and corruption
+        within defence sectors.
+      </p>
+      <div class="paper-card__authors">Bălașa, M.</div>
+      <a href="https://engelsbergideas.com/notebook/locked-arms-looming-threats-to-the-romania-nato-partnership/" class="paper-card__link" target="_blank" rel="noopener noreferrer">
+        Read Essay
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2.5 7h9M7.5 3l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </article>
+
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Mara Bălașa &middot; Stockholm School of Economics &middot; Cambridge Judge Business School
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
