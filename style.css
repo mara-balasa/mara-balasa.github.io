@@ -411,6 +411,11 @@ main {
 
 /* ── CV timeline ─────────────────────────────────────────── */
 .tl-track {
+  /* These variables drive both the grid columns and the line position —
+     change them in one place and everything stays aligned automatically. */
+  --tl-year-w: 108px;
+  --tl-dot-w:  24px;
+  --tl-body-pl: 20px;
   position: relative;
   margin-bottom: 52px;
 }
@@ -419,8 +424,8 @@ main {
 .tl-track::before {
   content: '';
   position: absolute;
-  /* year col = 108px, dot col = 24px → dot center at 108+12=120px, offset by half line width (1px) */
-  left: 119px;
+  /* Center of dot column = year-col + half dot-col; back off 1px for half the 2px line */
+  left: calc(var(--tl-year-w) + var(--tl-dot-w) / 2 - 1px);
   top: 0;
   bottom: 0;
   width: 2px;
@@ -433,8 +438,7 @@ main {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--blue);
-  /* align with content column: 108px year + 24px dot col + 20px body padding-left */
-  padding-left: 152px;
+  padding-left: calc(var(--tl-year-w) + var(--tl-dot-w) + var(--tl-body-pl));
   margin-top: 40px;
   margin-bottom: 18px;
   position: relative;
@@ -445,7 +449,7 @@ main {
 
 .tl-entry {
   display: grid;
-  grid-template-columns: 108px 24px 1fr;
+  grid-template-columns: var(--tl-year-w) var(--tl-dot-w) 1fr;
   align-items: start;
   margin-bottom: 26px;
 }
@@ -481,7 +485,7 @@ main {
 }
 
 .tl-body {
-  padding-left: 20px;
+  padding-left: var(--tl-body-pl);
   padding-bottom: 4px;
 }
 
@@ -500,12 +504,8 @@ main {
 }
 
 @media (max-width: 580px) {
-  /* year col = 80px, dot col = 24px → dot center at 80+12=92px, line offset by 1px */
-  .tl-track::before { left: 91px; }
-  .tl-entry { grid-template-columns: 80px 24px 1fr; }
-  /* 80px year + 24px dot col + 20px body padding = 124px */
-  .tl-section-label { padding-left: 124px; }
-  .tl-year { font-size: 0.72rem; }
+  .tl-track { --tl-year-w: 80px; }
+  .tl-year  { font-size: 0.72rem; }
 }
 
 /* ── CV entries ──────────────────────────────────────────── */
