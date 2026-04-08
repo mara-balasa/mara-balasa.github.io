@@ -500,7 +500,20 @@ main {
 }
 
 @media (max-width: 580px) {
-  .tl-track::before { left: 91px; }
+  /* Replace pixel-calculated line with one anchored to the dot column itself */
+  .tl-track { overflow: hidden; }
+  .tl-track::before { display: none; }
+  .tl-dot-col::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -9999px;
+    bottom: -9999px;
+    width: 2px;
+    background: var(--text);
+    z-index: 0;
+  }
   .tl-entry { grid-template-columns: 80px 24px 1fr; }
   .tl-section-label { padding-left: 118px; }
   .tl-year { font-size: 0.72rem; }
