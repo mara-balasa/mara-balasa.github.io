@@ -500,7 +500,7 @@ main {
 }
 
 @media (max-width: 580px) {
-  .tl-track::before { left: 79px; }
+  .tl-track::before { left: 91px; }
   .tl-entry { grid-template-columns: 80px 24px 1fr; }
   .tl-section-label { padding-left: 118px; }
   .tl-year { font-size: 0.72rem; }
